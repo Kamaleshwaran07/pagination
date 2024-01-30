@@ -1,0 +1,52 @@
+button{
+    color: red;
+    margin: 10em;
+    padding: 1em;
+}
+body{ 
+   font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+    
+}
+#pagination{
+    position:absolute;
+    top: 0 ;
+    left: 30em;
+}
+@media screen and (max-width:769px) {
+    #pagination{
+    position:absolute;
+    top: 0 ;
+    left: 10em;
+}
+} 
+@media screen and (max-width:426px) {
+    #pagination{
+    position:absolute;
+    top: 0 ;
+    left: 3em;
+}
+.container{
+    font-size: small;
+    width: 20em;
+}
+} 
+
+td{
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+}
+.td{
+    text-transform:uppercase;
+    background-color: #0dcaf0;
+}
+.container{
+    width: 40rem;
+}
+.name{
+    margin-top: 2em;
+}
