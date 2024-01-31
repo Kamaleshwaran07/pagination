@@ -505,10 +505,6 @@ console.log(dataList);
 
 
 
-function changePage(pageNumber) {
-  loaddata(dataList, 10, pageNumber);
-}
-
 function loaddata(dataList, itemsPerPage, currentPage) {
   let startIndex = (currentPage - 1) * itemsPerPage;
   let endIndex = startIndex + itemsPerPage;
@@ -550,7 +546,11 @@ function createPagination(dataList, itemsPerPage) {
   paginationDiv.innerHTML = html;
 }
 
+function changePage(pageNumber) {
+  loaddata(dataList, 10, pageNumber);
+}
+
 
 // Initial load with the first page
-loaddata(dataList, 10, 1);
-createPagination(dataList, 10);
+loaddata(dataList,10,1);
+createPagination(dataList,10);
